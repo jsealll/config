@@ -1,0 +1,30 @@
+set mouse=
+set showcmd
+set nobackup
+set syntax=enable
+set textwidth=0
+set fileformat=unix
+set nowritebackup
+set noswapfile
+set noundofile
+set nomodeline
+set nocompatible
+set nohlsearch
+set noincsearch
+set autoindent
+set background=dark
+set ruler
+set wrap
+set showmatch
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set omnifunc=syntaxcomplete#Complete
+behave mswin
+autocmd BufReadPost,BufNewFile *.txt setlocal tw=79
+set guifont=D2Coding:h11:cANSI
+set encoding=utf-8
+syntax on
+set autowriteall
+filetype plugin indent on
+:au FocusLost * :wa

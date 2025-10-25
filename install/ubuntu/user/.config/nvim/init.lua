@@ -1,0 +1,22 @@
+vim.opt.mouse = ''
+vim.opt.showcmd = true
+vim.opt.backup = false
+vim.opt.syntax = ''
+vim.opt.textwidth = 0
+vim.opt.fileformat = 'unix'
+vim.opt.compatible = false
+vim.opt.hlsearch = false
+vim.opt.incsearch = false
+vim.opt.autoindent = true
+vim.opt.background = 'dark'
+vim.opt.ruler = true
+vim.opt.wrap = true
+vim.opt.showmatch = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.scrolloff = 5
+vim.opt.encoding = 'utf-8'
+vim.opt.guicursor = 'n-v-c:block,i-ci-ve:ver1,r-cr-o:hor1,n-v-c-i-ci-ve:blinkwait700-blinkoff250-blinkon400,r-cr-o:blinkon0'
+vim.opt.termguicolors = true
+vim.cmd('colorscheme industry')

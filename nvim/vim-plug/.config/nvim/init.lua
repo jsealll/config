@@ -17,7 +17,7 @@ vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 vim.opt.textwidth = 0
 vim.opt.wrap = true
-vim.cmd('colorscheme industry')
+vim.cmd.colorscheme('industry')
 
 vim.call('plug#begin')
 vim.fn['plug#']('preservim/nerdtree')

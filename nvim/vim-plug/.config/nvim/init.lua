@@ -20,7 +20,6 @@ vim.opt.wrap = true
 vim.cmd.colorscheme('industry')
 
 vim.call('plug#begin')
-vim.fn['plug#']('preservim/nerdtree')
 vim.fn['plug#']('neovim/nvim-lspconfig')
 vim.fn['plug#']('hrsh7th/cmp-nvim-lsp')
 vim.fn['plug#']('hrsh7th/cmp-buffer')

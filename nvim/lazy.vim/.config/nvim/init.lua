@@ -37,15 +37,17 @@ require('nvim-treesitter.configs').setup {
 -- rustup should be insatlled with 'apt install'
 vim.lsp.config('rust_analyzer', {
     cmd = { '/usr/bin/rust-analyzer' },
+    filetypes = { "rust" },
     settings = {
         ['rust-analyzer'] = {
         }
     }
 })
 
--- pylsp should be insatlled with 'apt install python3-pylsp'
+-- pylsp should be installed with 'apt install python3-pylsp'
 vim.lsp.config('pylsp', {
     cmd = { '/usr/bin/pylsp' },
+    filetypes = { "python" },
     settings = {
         pylsp = {
             enabled = true,
@@ -55,7 +57,12 @@ vim.lsp.config('pylsp', {
     }
 })
 
--- rust_analyzer should be enabled only in .rs file
---vim.lsp.enable('rust_analyzer')
--- pylsp should be enabled only in .py file
---vim.lsp.enable('pylsp')
+-- hls should be installed with 'ghcup install hls'
+vim.lsp.config('hls', {
+    cmd = { 'haskell-language-server-wrapper', '--lsp' },
+    filetypes = { 'haskell', 'lhaskell', 'cabal' }
+})
+
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('pylsp')
+vim.lsp.enable('hls')

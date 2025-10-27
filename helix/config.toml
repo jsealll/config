@@ -1,1 +1,11 @@
 theme = "base16_default"
+[editor]
+mouse = false
+gutters = ["diagnostics", "spacer", "diff"]
+text-width = 80
+default-line-ending = "lf"
+insert-final-newline = false
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

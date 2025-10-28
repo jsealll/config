@@ -63,6 +63,14 @@ vim.lsp.config('hls', {
     filetypes = { 'haskell', 'lhaskell', 'cabal' }
 })
 
+-- LuaLS is install by latest build
+-- lua-language-server-3.15.0-linux-x64 should be writable by user
+vim.lsp.config('luals', {
+    cmd = { '/home/hauk/opt/lua-language-server-3.15.0-linux-x64/bin/lua-language-server' },
+    filetypes = { 'lua' }
+})
+
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('pylsp')
 vim.lsp.enable('hls')
+vim.lsp.enable('luals')

@@ -20,8 +20,4 @@ USER_HOME=`eval echo "~$USER"`
 install -o $USER -g $USER -m 0644 ./user/.tmux.conf $USER_HOME/.tmux.conf
 install -o $USER -g $USER -m 0644 ./user/.bash_aliases $USER_HOME/.bash_aliases
 install -o $USER -g $USER -m 0644 ./user/.vimrc $USER_HOME/.vimrc
-install -o $USER -g $USER -d -m 0755 $USER_HOME/.config
-install -o $USER -g $USER -d -m 0755 $USER_HOME/.config/nvim
-install -o $USER -g $USER -d -m 0755 $USER_HOME/.config/nvim/lua
-install -o $USER -g $USER -m 0644 ./user/.config/nvim/init.lua $USER_HOME/.config/nvim/init.lua
 sed -i -e "s/USER/$USER/" ./etc/sudoers.d/USER

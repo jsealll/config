@@ -1,1 +1,5 @@
 [[language]]
+name = "text"
+scope = "source.txt"
+file-types = ["txt"]
+indent = { tab-width = 1, unit = " " }

@@ -1,1 +1,7 @@
-.
+OPTIONS=showexp,showscore,time,color,!autopickup
+OPTIONS=lit_corridor
+OPTIONS=number_pad:0
+OPTIONS=role:Wizard,gender:female,name:R,race:Orc,dogname:D,catname:C
+OPTIONS=windowtype:tty,fixinv,safe_pet,sortpack,tombstone
+OPTIONS=symset:DECGraphics
+OPTIONS=autodig

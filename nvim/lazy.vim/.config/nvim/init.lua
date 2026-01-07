@@ -32,7 +32,7 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- nvim-lspconfig should be installed by
--- $ git clone https://github.com/neovim/nvim-lspconfig $HOME/.config/nvim/pack/nvim/start
+-- $ git clone https://github.com/neovim/nvim-lspconfig $HOME/.config/nvim/pack/nvim/start/nvim-lspconfig
 
 -- rustup should be insatlled with 'apt install'
 vim.lsp.config('rust_analyzer', {

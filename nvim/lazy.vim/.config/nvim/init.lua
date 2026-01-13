@@ -21,56 +21,56 @@ vim.opt.guicursor = 'n-v-c:block,i-ci-ve:ver1,r-cr-o:hor1,n-v-c-i-ci-ve:blinkwai
 vim.opt.termguicolors = true
 vim.cmd.colorscheme('industry')
 
-require("config.lazy")
-require('nvim-treesitter.configs').setup {
-    highlight = {
-        enable = true
-    },
-    indent = {
-        enable = true
-    }
-}
+-- require("config.lazy")
+-- require('nvim-treesitter.configs').setup {
+--     highlight = {
+--         enable = true
+--     },
+--     indent = {
+--         enable = true
+--     }
+-- }
 
 -- nvim-lspconfig should be installed by
 -- $ git clone https://github.com/neovim/nvim-lspconfig $HOME/.config/nvim/pack/nvim/start/nvim-lspconfig
 
 -- rustup should be insatlled with 'apt install'
-vim.lsp.config('rust_analyzer', {
-    cmd = { '/usr/bin/rust-analyzer' },
-    filetypes = { "rust" },
-    settings = {
-        ['rust-analyzer'] = {
-        }
-    }
-})
+-- vim.lsp.config('rust_analyzer', {
+--     cmd = { '/usr/bin/rust-analyzer' },
+--     filetypes = { "rust" },
+--     settings = {
+--         ['rust-analyzer'] = {
+--         }
+--     }
+-- })
 
 -- pylsp should be installed with 'apt install python3-pylsp'
-vim.lsp.config('pylsp', {
-    cmd = { '/usr/bin/pylsp' },
-    filetypes = { "python" },
-    settings = {
-        pylsp = {
-            enabled = true,
-            --plugins = {
-            --}
-        }
-    }
-})
+-- vim.lsp.config('pylsp', {
+--     cmd = { '/usr/bin/pylsp' },
+--     filetypes = { "python" },
+--     settings = {
+--         pylsp = {
+--             enabled = true,
+--             --plugins = {
+--             --}
+--         }
+--     }
+-- })
 
 -- hls should be installed with 'ghcup install hls'
-vim.lsp.config('hls', {
-    cmd = { 'haskell-language-server-wrapper', '--lsp' },
-    filetypes = { 'haskell', 'lhaskell', 'cabal' }
-})
+-- vim.lsp.config('hls', {
+--     cmd = { 'haskell-language-server-wrapper', '--lsp' },
+--     filetypes = { 'haskell', 'lhaskell', 'cabal' }
+-- })
 
--- LuaLS is install by latest build
--- lua-language-server-3.15.0-linux-x64 should be writable by user
-vim.lsp.config('luals', {
-    cmd = { '/home/hauk/opt/lua-language-server-3.15.0-linux-x64/bin/lua-language-server' },
-    filetypes = { 'lua' }
-})
+-- LuaLS is installed by latest build
+-- lua-langauge-server-3.15.0-linux-x64 should be writeable by user
+-- vim.lsp.config('luals', {
+--     cmd = { "/home/hauk/opt/lua-language-server-3.15.0-linux-x64/bin/lua-language-server" },
+--     filetypes = { 'lua' }
+-- })
 
-vim.lsp.enable('rust_analyzer')
-vim.lsp.enable('pylsp')
-vim.lsp.enable('hls')
-vim.lsp.enable('luals')
+-- vim.lsp.enable('rust_analyzer')
+-- vim.lsp.enable('pylsp')
+-- vim.lsp.enable('hls')
+-- vim.lsp.enable('luals')

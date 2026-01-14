@@ -20,4 +20,4 @@ USER_HOME=`eval echo "~$USER"`
 install -o $USER -g $USER -m 0644 ./user/.tmux.conf $USER_HOME/.tmux.conf
 install -o $USER -g $USER -m 0644 ./user/.bash_aliases $USER_HOME/.bash_aliases
 install -o $USER -g $USER -m 0644 ./user/.vimrc $USER_HOME/.vimrc
-sed -i -e "s/USER/$USER/" ./etc/sudoers.d/USER
+sed -i -e "s/USER/$USER/" ./etc/sudoers.d/$USER

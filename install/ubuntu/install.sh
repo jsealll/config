@@ -17,6 +17,6 @@ install -o $SUDO_UID -g $SUDO_GID -m 0644 ./user/.tmux.conf $USER_HOME/.tmux.con
 install -o $SUDO_UID -g $SUDO_GID -m 0644 ./user/.bash_aliases $USER_HOME/.bash_aliases
 install -o $SUDO_UID -g $SUDO_GID -m 0644 ./user/.vimrc $USER_HOME/.vimrc
 install -o $SUDO_UID -g $SUDO_GID -m 0644 ./user/.config/nvim/init.lua $USER_HOME/.config/nvim/init.lua
-sed -i -e "s/USER/$SUDO_USER/" ./etc/sudoers.d/USER
 install -o root -g root -m 0644 ./etc/sudoers.d/USER /etc/sudoers.d/$SUDO_USER
+sed -i -e "s/USER/$SUDO_USER/" /etc/sudoers.d/$SUDO_USER
 install -o root -g root -m 0644 ./etc/profile.d/umask.sh /etc/profile.d/umask.sh

@@ -1,1 +1,16 @@
-.
+[general]
+working_directory = "C:\\0"
+[window]
+dimensions = { columns = 114, lines = 40 }
+position = { x = 0, y = 660 }
+[font]
+normal = { family = "D2Coding", style = "Regular" }
+bold = { family = "D2Coding", style = "Bold" }
+size = 11
+[selection]
+save_to_clipboard = true
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 350
+[terminal]
+shell = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
